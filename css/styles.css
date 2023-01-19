@@ -1156,9 +1156,6 @@ margin-right: 40px;
         }
     
         .footer {
-            background-color: var(--bold-color);
-            padding-top: 96px;
-            padding-bottom: 96px;
             padding-left: 108px;
         }
 
@@ -1193,14 +1190,6 @@ margin-right: 40px;
             justify-content: center;
         }
     
-        .subscribe-text {
-            text-align: left;
-            font-size: 16px;
-            line-height: calc(24/16);
-            letter-spacing: 0.02em;
-            color: var(--main-white);
-            margin-bottom: 16px;
-        }
     
         .footer-form {
             display: flex;
@@ -1209,6 +1198,10 @@ margin-right: 40px;
         .subscribe-input {
             width: 264px;
             margin-right: 24px;
+        }
+
+        .subscribe-text {
+            text-align: left;
         }
         
 }
@@ -1224,7 +1217,6 @@ margin-right: 40px;
     }
     
         .footer {
-            background-color: var(--bold-color);
             padding-top: 100px;
             padding-bottom: 100px;
     
@@ -1235,15 +1227,6 @@ margin-right: 40px;
         }
     
 
-    
-        .subscribe-text {
-    
-            font-size: 16px;
-            line-height: calc(24/16);
-            letter-spacing: 0.02em;
-            color: var(--main-white);
-            margin-bottom: 16px;
-        }
 
 }
 
