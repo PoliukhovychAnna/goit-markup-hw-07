@@ -215,14 +215,16 @@ margin-right: 40px;
             url(../images/mobile/hero-m/hero-bg-mobile.jpg);
 }
 
-/************** MOBILE *********/
-    /* @media (min-device-pixel-ratio: 2),
+/* ************* MOBILE *********/
+    @media screen and (min-width:320px) and 
+            (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../images/mobile/hero-m/hero-bg-mobile@2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url(../images/mobile/hero-m/hero-bg-mobile@2x.jpg);
                  }
-                } */
+                }
 
 
 
@@ -234,22 +236,35 @@ margin-right: 40px;
           }
         }
 
- /* @media screen and (min-width:768px),
+ @media screen and (min-width:768px),
                    (min-device-pixel-ratio: 2),
                    (min-resolution: 192dpi),
                    (min-resolution: 2dppx) {
                        .hero {
-                             background-image: url(../images/tablet/hero-t/hero-bg-tablet@2x.jpg);
+                             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                              url(../images/tablet/hero-t/hero-bg-tablet@2x.jpg);
                              }
-            } */
+            }
     
         /************** DESKTOP *********/
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/desktop/hero-d/hero-bg-desktop.jpg);
     }
 }
+
+@media screen and (min-width:1200px),
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/desktop/hero-d/hero-bg-desktop@2x.jpg);
+    
+        }
+}
+
 
 .hero-title {
     font-weight: 700;
@@ -1119,7 +1134,7 @@ margin-right: 40px;
             margin-right: 120px;
         }
     
-        
+
     
         .subscribe-text {
     
