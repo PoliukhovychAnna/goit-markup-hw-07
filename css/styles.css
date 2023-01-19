@@ -105,7 +105,12 @@ img {
 .header {
     position: relative;
 }
-
+@media screen and (max-width:480px) {
+    .header-page {
+        padding: 24px 16px;
+    }
+    
+}
 .header-page {
     display: flex;
     align-items: center;
