@@ -1000,10 +1000,13 @@ margin-right: 40px;
     row-gap: 48px;
 }
 
+
 .project-item {
-    /* max-width:396px; */
-    align-items: center;
-}
+            /* max-width:396px; */
+            align-items: center;
+        }
+
+
 
 @media screen and (min-width:768px) {
     .project-list {
@@ -1016,6 +1019,7 @@ margin-right: 40px;
     }
 
     .project-item {
+
         flex-basis: calc((100% - 1 * 24px) / 2);
 
     }
@@ -1039,10 +1043,6 @@ margin-right: 40px;
 
 
 
-
-.project-item:not(:last-child) {
-    margin-bottom: 48px;
-}
 
 .project-link {
     display: block;
