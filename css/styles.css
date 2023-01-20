@@ -277,9 +277,12 @@ img {
     }
 }
 
+.logo-dark {
+    margin-right: 77px;
+}
 
 .logo-dark, .logo-dark:hover, .logo-dark:focus,.logo-dark:active {
-    margin-right: 77px;
+    
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -1118,16 +1121,17 @@ margin-right: 40px;
      padding-top: 96px;
      padding-bottom: 96px;
 
-     
-
  }
+
+.logo-light {
+    text-align: center;
+}
 
  .logo-light,
  .logo-light:hover,
  .logo-light:focus,
  .logo-light:active {
      display: block;
-     text-align: center;
      font-family: 'Raleway', sans-serif;
      font-weight: 800;
      font-size: 18px;
