@@ -105,16 +105,27 @@ img {
 .header {
     position: relative;
 }
-@media screen and (max-width:480px) {
+/* @media screen and (max-width:480px) {
     .header-page {
         padding: 24px 16px;
     }
     
-}
+} */
+
 .header-page {
     display: flex;
     align-items: center;
+    padding: 24px 16px;
+
 }
+
+/* @media screen and (max-width:480) {
+    .header-page {
+        padding: 24px 16px;
+    }
+} */
+
+
     /************************ HEADER MOBILE MENU*****************************/
 
 .menu-burger-btn {
@@ -212,7 +223,6 @@ img {
 }
 
 .mobile-contacts-item-mail {
-    font-weight: 500;
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: 0.02em;
@@ -289,7 +299,7 @@ img {
     .contacts {
         display: flex;
         flex-direction: column;
-        margin-left: auto;
+        margin-left: 118px;
     }
 }
 /************************ DESKTOP HEADER*****************************/
@@ -338,21 +348,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--bold-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
     transition: color var(--anim-time-and-func);
 }
 
 @media screen and (min-width:480px) {
     .nav-link {
-        padding-bottom: 12px;
+        padding-bottom: 38px;
     }
     
 }
 
 @media screen and (min-width:1200px) {
     .nav-link {
-        padding-bottom: 24px;
+        padding-bottom: 26px;
     }
     
 }
@@ -363,13 +371,12 @@ img {
 .nav-link:focus {color: var(--normal-color)}
 .nav-link:active {color: var(--main-blue);}
 
+
 @media screen and (min-width:1200px) {
     .contacts {
             display: flex;
             flex-direction: row;
             margin-left: auto;
-            padding-top: 24px;
-            padding-bottom: 24px;
         }
 }
 
@@ -905,22 +912,34 @@ margin-right: 40px;
 /* ============================CUSTOMERS ==================================*/
 
 
+
+
 /*============================== PORTFOLIO ============================*/
 
-/*============================== SECTION-PROJECTS ============================*/
+
+/****** MOBILE PORTFOLIO ******/
+
 .buttons-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-bottom: 48px;
     align-items: center;
 }
+
 
 .button-selection:not(:last-child) {
     margin-right: 24px; 
 }
 
+@media screen and (max-width:767.98px) {
+    .button-selection:not(:last-child) {
+       margin-bottom: 16px;
+    }
+   
+}
+
 .button-item {
-    font-weight: 700;
     font-family: inherit;
     background-color: var(--secondary-white);
     font-size: 16px;
@@ -928,7 +947,7 @@ margin-right: 40px;
     align-items: center;
     letter-spacing: 0.04em;
     color:var(--main-blue);
-    padding: 12px 24px;
+    padding: 8px 16px;
     border: 1px solid var(--footer-text);
     border-radius: 4px;
     transition: background-color var(--anim-time-and-func), color var(--anim-time-and-func), box-shadow var(--anim-time-and-func);
@@ -941,14 +960,81 @@ margin-right: 40px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+/************** TABLET AND DESKTOP PORTFOLIO *****************/
+
+@media screen and (min-width:768px) {
+    .buttons-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 64px;
+        }
+
+    .button-item {
+        padding: 12px 24px;
+    }
 }
 
 
+/*============================== SECTION-PROJECTS ============================*/
+
+/* MOBILE PROJECTS */
+
+
+@media screen and (max-width:479.98px) {
+    .projects.section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    
+}
+
+.project-list {
+    row-gap: 48px;
+}
+
+.project-item {
+    /* max-width:396px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width:768px) {
+    .project-list {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .project-item {
+        flex-basis: calc((100% - 1 * 24px) / 2);
+
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
+    }
+    
+    .project-item {
+        flex-basis: calc((100% - 2 * 24px) / 3);
+        
+    }
+
+}
+
+
+
+
+.project-item:not(:last-child) {
+    margin-bottom: 48px;
+}
 
 .project-link {
     display: block;
