@@ -395,7 +395,7 @@ img {
     top: 0;
     background-size: cover;
     text-align: center;
-    min-width:480px;
+    min-width: 480px;
     margin: 0 auto;
     background-size: cover;
     padding-top: 112px;
@@ -1387,14 +1387,14 @@ img {
 
 .modal {
     position: absolute;
-    width: 392px;
-    height: 586px;
+    max-height: 90vh;
     padding: 72px 24px 24px 24px;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     scale: 1;
     transition: scale var(--anim-time-and-func);
+    overflow-y: scroll;
 
 
     background: #FCFCFC;
@@ -1403,32 +1403,24 @@ img {
 }
 
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:479px) {
     .modal {
-        max-width: 392px;
-        height: 586px;
+        min-width: 320px;
+        /* height: 586px; */
+    }
+
+}
+
+@media screen and (min-width:480px) {
+    .modal {
+        width: 408px;
+        /* height: 586px; */
         max-height: 90vh;
-        overflow-y: scroll;
     }
 
 }
 
-@media screen and (min-width:768px) {
-    .modal {
-        width: 408px;
-        height: 586px;
-        overflow-y: scroll;
-    }
 
-}
-
-@media screen and (min-width:1200pxpx) {
-    .modal {
-        width: 408px;
-        height: 584px;
-    }
-
-}
 
 .close-btn {
     position: absolute;
@@ -1493,7 +1485,7 @@ color: var(--bold-color);
 
 
 .modal-input {
-    width: 360px;
+    width: 100%;
     height: 40px;
     padding: 8px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
