@@ -1055,7 +1055,6 @@ img {
 
 @media screen and (min-width:768px) {
     .project-list {
-        justify-content: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1443,6 +1442,7 @@ img {
     scale: 1;
     transition: scale var(--anim-time-and-func);
     overflow-y: scroll;
+    width: calc(100% - 30px);
 
 
     background: #FCFCFC;
@@ -1451,13 +1451,7 @@ img {
 }
 
 
-@media screen and (max-width:479px) {
-    .modal {
-        min-width: 320px;
-        /* height: 586px; */
-    }
 
-}
 
 @media screen and (min-width:480px) {
     .modal {
@@ -1500,7 +1494,7 @@ img {
 
 .modal-form {
     display: block;
-    width: 360px;
+    width: 100%;
 }
 
 .modal-text {
@@ -1544,6 +1538,7 @@ color: var(--bold-color);
 
     transition: border var(--anim-time-and-func);
 }
+
 
 .modal-input:focus {
     border: 1px solid var(--main-blue);
