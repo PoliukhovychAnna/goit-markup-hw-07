@@ -37,12 +37,18 @@ button {
 
          /**************************MOBILE SCREEN *****************************/
 .container {
-    max-width: 480px;
+    /* min-width: 320px; */
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
     
+}
+
+@media screen and (max-width:479px) {
+    .container {
+        width: 100%;
+    }
 }
 
 
@@ -63,7 +69,7 @@ button {
 
 
 .section {
-    min-width: 480px;
+    min-width: 320px;
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -108,7 +114,7 @@ img {
 
 
 .header-page {
-    min-width: 480px;
+    min-width: 320px;
     display: flex;
     align-items: center;
 
@@ -395,7 +401,7 @@ img {
     top: 0;
     background-size: cover;
     text-align: center;
-    min-width: 480px;
+    min-width: 320px;
     margin: 0 auto;
     background-size: cover;
     padding-top: 112px;
@@ -403,6 +409,7 @@ img {
 
    
 }
+
 
 /* ************* MOBILE *********/
 
@@ -421,9 +428,28 @@ img {
                 url(../images/mobile/hero-m/hero-bg-mobile@2x.jpg);
 }
 }
+.hero-title {
+    width: auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    margin-bottom: 72px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-white);
+}
 }
 
+@media screen and (min-width:480px) {
+    .hero-title {
+            width: 320px;
+        }
 
+}
     
 
 /************** TABLET *********/
@@ -470,20 +496,7 @@ img {
 
 
 
-    .hero-title {
-        font-weight: 700;
-         font-size: 36px;
-         line-height: calc(40/36);
-         width: 320px;
-        margin-bottom: 72px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 72px;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--main-white);
-    }
+   
     
 
 @media screen and (min-width:768px) {
@@ -549,15 +562,6 @@ img {
     align-items: center;
 }
 
-@media screen and (max-width:479.98px) {
-    .advantages-list-item:not(:last-child) {
-            margin-bottom: 72px;
-        }
-
-}
-
-
-
 .advantages-title {
     font-weight: 700;
     font-size: 36px;
@@ -567,6 +571,7 @@ img {
     margin-bottom: 8px;
     text-align: center;
 }
+
 .advantages-text {
     font-size: 16px;
     width: 396px;
@@ -574,6 +579,23 @@ img {
     letter-spacing: 0.02em;
     color: var(--normal-color);
 }
+
+@media screen and (max-width:479.98px) {
+    .advantages-list-item {
+        width: 100%;
+    }
+
+    .advantages-list-item:not(:last-child) {
+            margin-bottom: 72px;
+        }
+    .advantages-text {
+        width: 100%;
+    }
+
+}
+
+
+
 
 
 
@@ -1126,7 +1148,7 @@ img {
 /* MOBILE FOOTER */
 
  .footer {
-    min-width: 480px;
+    min-width: 320px;
     background-color: var(--bold-color);
      padding-top: 96px;
      padding-bottom: 96px;
@@ -1211,13 +1233,12 @@ img {
      margin-bottom: 16px;
  }
 
-
  .subscribe-input {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 396px;
+     display: flex;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 396px;
      height: 40px;
      color: var(--main-white);
      background-color: transparent;
@@ -1227,6 +1248,15 @@ img {
      border-radius: 4px;
      margin-bottom: 16px;
  }
+ 
+@media screen and (max-width:479px) {
+    .subscribe-input {
+        width: 100%;
+    }
+    
+}
+
+ 
 
  .subscribe-input::placeholder {
      font-size: 12px;
